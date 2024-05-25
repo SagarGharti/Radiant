@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./assets/output.css" rel="stylesheet" />
+    <script src="/tailwind.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <div class="bg-white sticky top-0 z-50">
+        <div style="background: #FFF8E5;">
+            <div class="flex mx-auto py-4 justify-between items-center px-[10%]">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="home.html"><img src="assets/Images/logo.png" alt="Radient College Logo" class="h-10"></a>
+                </div>
+                <div class="hidden md:flex gap-10 items-center font-bold relative">
+                    <a href="aboutus.html">About Us</a>
+                    <!-- Courses Button -->
+                    <div class="relative">
+                        <button id="courses-link" class="flex items-center focus:outline-none">
+                            <span>Courses</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
+                                class="ml-1">
+                                <path fill="currentColor" d="m7 10l5 5l5-5z" />
+                            </svg>
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <div id="dropdown-menu"
+                        class="hidden absolute mt-2 bg-white border border-gray-200 rounded-md shadow-lg text-md text-gray-600 font-normal">
+                        <a href="technicalEducation.html" class="block px-4 py-2  text-gray hover:bg-gray-200">Technical
+                          Education</a>
+                        <a href="hospatilityManagement.html" class="block px-4 py-2  text-gray hover:bg-gray-200">Hospatility
+                          Management</a>
+                      </div>
+                    </div>
+                    <a href="events.html">Events</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <!-- Hamburger button -->
+                <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden flex flex-col justify-center items-center">
+                <a href="aboutus.html" class="block py-2 px-4">About Us</a>
+                <a href="admissions.html" class="block py-2 px-4">Admissions</a>
+                <a href="events.html" class="block py-2 px-4">Events</a>
+                <a href="contact.html" class="block py-2 px-4">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+
+    <div style="background: linear-gradient(180deg, rgb(255, 248.06, 229.43) 0%, rgb(255, 247.1, 251.12) 100%)">
+        <div class="flex sm:flex-col md:flex-row lg:flex-row flex-col py-4 sm:pt-8 px-[10%]">
+            <div class="flex flex-col justify-center gap-6">
+                <p class="text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-normal">
+                    We're <span class="text-primary lg:text-8xl font-bold">RADIANT</span>
+                    <span class="lg:text-8xl font-bold">College.</span>
+                </p>
+
+                <div class="flex gap-4">
+                    <img src="./assets/images/graduation-hat.svg" class="h-5 w-5" style="background-color: #FFFfff" />
+                    <p class="sm:text-xs">
+                        In partnership with
+                        <span class="font-semibold">Kathmandu University.</span>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/images/HeroSection.png" />
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Welcome Section -->
+    
+    <div class="flex justify-between my-[4%] sm:flex-col md:flex-row lg:flex-row flex-col px-[10%]">
+        <div class="w-full md:w-[40%] lg:w-[40%] xs:mb-6 sm: mb-6 sm:py-4 xs:py-4">
+            <p class="font-bold text-2xl sm:text-base md:text-2xl lg:text-2xl xl:text-3xl">Welcome to Radiant</p>
+            <p class="py-4 font-normal text-md leading-8 text-justify text-sm sm:text-xs md:text-sm lg:text-sm xl:text-base"
+            style="line-height: 28px;">
+                It is a long established fact that a reader will be distracted by
+                the readable content of a page when looking at its layout. The point
+                of using Lorem Ipsum is that it has a more-or-less normal
+                distribution of letters, as opposed to using.
+            </p>
+
+            <button class="border rounded-full p-2 w-40 text-md font-bold" style="border-color:#515050;">Learn More</button>
+        </div>
+        <div class="gap-10 flex flex-col md:flex-row w-full md:w-[40%] lg:w-[40%]">
+            <div class="flex w-full md:w-auto gap-4 sm:gap-8 xs:gap-4 items-center justify-center">
+                <div style="background-color: #fff8e5"
+                    class="rounded-lg p-2 h-30 sm:p-3 text-xs sm:text-sm font-bold flex flex-col gap-2 sm:gap-3">
+                    <img src="./assets/images/best-study-courses.svg" class="h-4 w-4 sm:h-5 sm:w-5" />
+                    <p>Best study courses</p>
+                </div>
+                <div style="background-color: #FFF8FB"
+                    class="rounded-lg p-2 h-30 sm:p-3 text-xs sm:text-sm font-bold flex flex-col gap-2 sm:gap-3">
+                    <img src="./assets/images/video-training.svg" class="h-4 w-4 sm:h-5 sm:w-5" />
+                    <p>Video Training</p>
+                </div>
+                <div style="background-color: #FBFBFB"
+                    class="rounded-lg p-2 sm:p-3 text-xs sm:text-sm font-bold flex flex-col gap-2 sm:gap-3">
+                    <img src="./assets/images/teacher.svg" class="h-4 w-4 sm:h-5 sm:w-5" />
+                    <p class="w-full sm:w-auto">Expert Teachers</p>
+                </div>
+            </div>
+        </div>
+
+     </div>
+
+    <!-- Courses -->
+    
+    <div style="background-color:#FFFAFC;">
+        <div class="flex justify-between py-[5%] sm:flex-col md:flex-row lg: flex-row flex-col px-[10%]">
+            <div class="w-full md:w-[40%] lg:w-[40%] font-normal">
+                <p class="font-bold text-2xl sm:text-base md:text-2xl lg:text-2xl xl:text-3xl">Courses</p>
+                <p class="text-md py-2 sm:text-md xs:text-sm md:text-md lg:text-lg xl:text-lg font-semibold">
+                    Our courses are offered in partnership with Kathmandu University!
+                </p>
+
+                <p class="py-4 leading-6 text-justify text-sm sm:text-xs md:text-sm lg:text-sm xl:text-base"
+                style="line-height:28px;">
+                    It is a long established fact that a reader will be distracted by
+                    the readable content of a page when looking at its layout. The point
+                    of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using.
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <img src="./assets/images/Courses1.png" class="h-auto lg: w-70 md:w-60 sm: w-60" />
+                <img src="./assets/images/Courses2.png" class="h-auto md:w-70 sm: w-60" />
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Message from dean -->
+
+    <div class="flex py-[5%] sm:flex-col md:flex-row lg: flex-row flex-col px-[10%]">
+        <div>
+            <div class="flex gap-4 py-4">
+                <p class="font-bold text-2xl sm:text-base md:text-2xl lg:w-[40%] xl:text-2xl">Message from Dean</p>
+                <img src="./assets/images/dean.png" class="h-12 w-12" />
+            </div>
+            <div class="w-full md:w-[40%] lg:w-[60%]">
+                <p class="py-2 leading-6 text-justify text-sm sm:text-xs md:text-sm lg:text-sm xl:text-base"
+                style="line-height: 28px;">
+                    Warm greetings from the faculty, students, and staff of the
+                    Kathmandu University School of Education (KUSOED). We are
+                    delighted that you have shown interest in our school and its
+                    vision.
+                </p>
+                <p class="font-bold">Prof. Dr. Bal Chandra Luitel</p>
+            </div>
+        </div>
+        <div class="flex items-center justify-center">
+            <img src="./assets/images/messageVideo.png" />
+        </div>
+    </div>
+
+    <!-- News and events -->
+
+    <div style="background-color:#FBFBFB;">
+        <div class="py-[5%] flex flex-col px-[10%]">
+            <p class="text-2xl font-bold mb-4">News & Events</p>
+            <div class="flex flex-col gap-8  mt-4 md:flex-row ">
+                <div class="w-full md:w-1/3">
+                    <img src="./assets/images/news1.png" class="w-full" />
+                    <p class="text-[#F9A81D] text-sm py-2">Notices</p>
+                    <p class="font-bold">Fellowship Notice for Teachers -2024 Feb</p>
+                    <p class="text-sm py-2">24th May, 2024</p>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <img src="./assets/images/news1.png" class="w-full" />
+                    <p class="text-primary text-sm py-2">Announcement</p>
+                    <p class="font-bold">Application Call for Postdoctoral Positions 2024 May</p>
+                    <p class="text-sm py-2">24th May, 2024</p>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <img src="./assets/images/news1.png" class="w-full" />
+                    <p class="text-[#F9A81D] text-sm py-2">Notices</p>
+                    <p class="font-bold">
+                        Kathmandu University School of Education-Semester Calendar
+                        February to July 2024
+                    </p>
+                    <p class="text-sm py-2">24th May, 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="px-[10%]">
+        <div class="flex flex-col md:flex-row justify-between pt-[5%] pb-[3%]">
+            <div class="mb-4 md:mb-0">
+                <img src="assets/Images/logo.png" alt="Radient College Logo" class="h-10 mb-4" />
+                <div class="py-5 text-base sm:text-xs md:text-xs lg:text-base" style="line-height: 28px;">
+                    <p><strong>Phone:</strong> +977-1-2345678</p>
+                    <p><strong>Address:</strong> Some Address, Kathmandu, Nepal</p>
+                    <p><strong>Email:</strong> admin@radientcollege.edu.np</p>
+                </div>
+            </div>
+            <div class="mb-4 md:mb-0">
+                <p class="py-5 font-bold text-base">Navigation</p>
+                <div class="text-base sm:text-xs md:text-xs lg:text-base" style="line-height: 28px;">
+                    <p>e-Library</p>
+                    <p>Contact Us</p>
+                    <p>e-Learning</p>
+                    <p>KU ISMS</p>
+                </div>
+            </div>
+            <div>
+                <p class="py-5 font-bold">Useful Links</p>
+                <div class="text-base sm:text-xs md:text-xs lg:text-base" style="line-height: 28px;">
+                    <p>Apply for transcripts</p>
+                    <p>Download Brochures</p>
+                    <p>Guideline for Teaching & Learning</p>
+                    <p>KU Online Registration</p>
+                </div>
+            </div>
+        </div>
+        <p class="text-sm">© Copyright 2024. Radient College.</p>
+        <div class="flex gap-3 flex-col md:flex-row py-4">
+            <a href="https://www.facebook.com/profile.php?id=61559041561401"><img src="./assets/images/Facebook (1).svg" alt="Facebook"></a>
+            <a href="#"><img src="assets/images/Twiter.svg" alt="Twitter"></a>
+            <a href="#"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        // Toggle dropdown menu
+        document.getElementById('courses-link').addEventListener('click', function (event) {
+            event.stopPropagation();
+            document.getElementById('dropdown-menu').classList.toggle('hidden');
+        });
+
+        // Toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Hide dropdown menu when clicking outside
+        window.addEventListener('click', function () {
+            if (!document.getElementById('courses-link').contains(event.target)) {
+                document.getElementById('dropdown-menu').classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="./assets/output.css" rel="stylesheet" />
+  <script src="/tailwind.js"></script>
+</head>
+
+<body>
+  <div>
+    <!-- Navbar Section -->
+    <div class="shadow-lg bg-white sticky top-0 z-50 px-[10%]">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="home.html"><img src="assets/Images/logo.png" alt="Radient College Logo" class="h-10"></a>
+        </div>
+        <div class="hidden md:flex gap-10 items-center font-bold relative">
+          <a href="aboutus.html">About Us</a>
+          <!-- Courses Button -->
+          <div class="relative">
+            <button id="courses-link" class="flex items-center focus:outline-none">
+              <span>Courses</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" class="ml-1">
+                <path fill="currentColor" d="m7 10l5 5l5-5z" />
+              </svg>
+            </button>
+            <!-- Dropdown Menu -->
+            <div id="dropdown-menu"
+              class="hidden absolute mt-2 bg-white border border-gray-200 rounded-md shadow-lg text-md text-gray-600 font-normal">
+              <a href="technicalEducation.html" class="block px-4 py-2  text-gray hover:bg-gray-200">Technical
+                Education</a>
+              <a href="hospatilityManagement.html" class="block px-4 py-2  text-gray hover:bg-gray-200">Hospatility
+                Management</a>
+            </div>
+          </div>
+          <a href="events.html">Events</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <!-- Hamburger button -->
+        <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden flex flex-col justify-center items-center">
+        <a href="aboutus.html" class="block py-2 px-4">About Us</a>
+        <a href="admissions.html" class="block py-2 px-4">Admissions</a>
+        <a href="events.html" class="block py-2 px-4">Events</a>
+        <a href="contact.html" class="block py-2 px-4">Contact</a>
+      </div>
+    </div>
+
+
+    <!-- Hero Section -->
+    <div style="background-color: #9c004d" class="flex flex-col justify-center text-white items-center h-[200px]">
+      <p class="text-sm md:text-sm lg:text-base pb-1">Bachelors in</p>
+      <p class="text-xl md:text-3xl lg:text-4xl font-bold">Hospitality Management</p>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="flex flex-col md:flex-row justify-between my-10 px-10 w-full px-[10%]">
+      <div class="w-[100%] md:w-[90%] mb-4 md:mb-0">
+        <p class="font-bold text-2xl sm:text-base md:text-2xl lg:text-2xl xl:text-3xl">About the courses</p>
+        <p class="py-4 leading-6 lg:text-base md:text-sm sm:text-sm font-semibold">
+          Our courses are offered in partnership with Kathmandu University!
+        </p>
+        <p class="py-4 font-normal text-md leading-8 text-justify text-sm sm:text-xs md:text-sm lg:text-sm xl:text-base"
+        style="line-height: 28px;">
+          <span class="font-semibold">B Tech. IT (Information Technology)</span> is a pioneer competent bachelor program.
+          The purpose of the Bachelor of Technology Education (B Tech. Ed.) (Information Technology) is to prepare
+          individuals for careers in the private and public sector at the level of instructor, teacher, trainer, or
+          professionals in technical and vocational education subject areas. The students enrolled will be
+          “learning-by-doing“. Salient features of the program are: real world learning, globally competent program,
+          vocational subjects encourage the best placements of the students in the reputed organizations, practical and
+          effective learning for students with competency-based evaluation criteria, and to promote national and
+          international market-based curriculum with intensive practical based learning.
+        </p>
+        <p class="py-2 font-normal text-md leading-8 text-justify text-sm sm:text-xs md:text-sm lg:text-base xl:text-base">
+          <Strong>Eligibility:</Strong></p>
+        <p class="py-2 font-normal text-md leading-8 text-justify text-sm sm:text-xs md:text-sm lg:text-base xl:text-base"
+        style="line-height: 28px;">
+          Nepali or non-Nepali national with minimum <span class="font-semibold">D+ grade in each subject of grade 12 with
+            CGPA 1.8 or more or A minimum score of second division marks in 10+2,</span> PCL or equivalent in any
+          disciplines.
+        </p>
+  
+        <button class="border rounded-full mt-4 p-3 w-40 font-bold "
+          style="background-color:#9c004d; color:#ffffff">Admission</button>
+      </div>
+      <div class="w-full md:w-auto">
+        <img src="./assets/images/About-Hero.png" />
+      </div>
+    </div>
+  
+
+
+    <!-- course curriculum -->
+    <div style="background-color:#FBFBFB;">
+      <div class="pb-[3%] px-[10%] pt-[3%]">
+  
+        <div class="flex items-center flex-col pb-5">
+          <p class="text-center font-bold text-2xl">Course Curriculum</p>
+        </div>
+        <div class="flex flex-col gap-1 mt-2">
+          <div style="background-color: #9c004d; color: #ffffff;" class="rounded px-4 py-3">
+            <a href="#" class="text-sm"><strong>+</strong>&nbsp Year 1 Semester I (19 Credit)</p>
+          </div>
+          <div style="background-color: #9c004d; color: #ffffff;" class="rounded px-4 py-3">
+            <a href="#" class="text-sm"><strong>+</strong>&nbsp Year 1 Semester II (19 Credit)</p>
+          </div>
+          <div style="background-color: #9c004d; color: #ffffff;" class="rounded px-4 py-3">
+            <a href="#" class="text-sm"><strong>+</strong>&nbsp Year 2 Semester III (19 Credit)</p>
+          </div>
+          <div style="background-color: #9c004d; color: #ffffff;" class="rounded px-4 py-3">
+            <a href="#" class="text-sm"><strong>+</strong>&nbsp Year 2 Semester IV (19 Credit)</p>
+          </div>
+          <div style="background-color: #9c004d; color: #ffffff;" class="rounded px-4 py-3">
+            <a href="#" class="text-sm"><strong>+</strong>&nbsp Year 3 Semester V (19 Credit)</p>
+          </div>
+          <div style="background-color: #9c004d; color: #ffffff;" class="rounded px-4 py-3">
+            <a href="#" class="text-sm"><strong>+</strong>&nbsp Year 3 Semester VI (19 Credit)</p>
+          </div>
+          <div style="background-color: #9c004d; color: #ffffff;" class="rounded px-4 py-3">
+            <a href="#" class="text-sm"><strong>+</strong>&nbsp Year 4 Semester VII (19 Credit)</p>
+          </div>
+          <div style="background-color: #9c004d; color: #ffffff;" class="rounded px-4 py-3">
+            <a href="#" class="text-sm"><strong>+</strong>&nbsp Year 4 Semester VIII (19 Credit)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+    <!-- Footer -->
+    <div class="px-[10%]">
+      <div class="flex flex-col md:flex-row justify-between pt-[5%] pb-[3%]">
+          <div class="mb-4 md:mb-0">
+              <img src="assets/Images/logo.png" alt="Radient College Logo" class="h-10 mb-4" />
+              <div class="py-5 text-base sm:text-xs md:text-xs lg:text-base" style="line-height: 28px;">
+                  <p><strong>Phone:</strong> +977-1-2345678</p>
+                  <p><strong>Address:</strong> Some Address, Kathmandu, Nepal</p>
+                  <p><strong>Email:</strong> admin@radientcollege.edu.np</p>
+              </div>
+          </div>
+          <div class="mb-4 md:mb-0">
+              <p class="py-5 font-bold text-base">Navigation</p>
+              <div class="text-base sm:text-xs md:text-xs lg:text-base" style="line-height: 28px;">
+                  <p>e-Library</p>
+                  <p>Contact Us</p>
+                  <p>e-Learning</p>
+                  <p>KU ISMS</p>
+              </div>
+          </div>
+          <div>
+              <p class="py-5 font-bold">Useful Links</p>
+              <div class="text-base sm:text-xs md:text-xs lg:text-base" style="line-height: 28px;">
+                  <p>Apply for transcripts</p>
+                  <p>Download Brochures</p>
+                  <p>Guideline for Teaching & Learning</p>
+                  <p>KU Online Registration</p>
+              </div>
+          </div>
+      </div>
+      <p class="text-sm">© Copyright 2024. Radient College.</p>
+      <div class="flex gap-3 flex-col md:flex-row py-4">
+          <a href="https://www.facebook.com/profile.php?id=61559041561401"><img src="./assets/images/Facebook (1).svg"
+                  alt="Facebook"></a>
+          <a href="#"><img src="assets/images/Twiter.svg" alt="Twitter"></a>
+          <a href="#"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+  </div>
+
+
+    <script>
+      document.getElementById('menu-toggle').addEventListener('click', function () {
+        var menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      });
+      // Toggle dropdown menu
+      document.getElementById('courses-link').addEventListener('click', function (event) {
+        event.stopPropagation();
+        document.getElementById('dropdown-menu').classList.toggle('hidden');
+      });
+
+      // Toggle mobile menu
+      document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+
+      // Hide dropdown menu when clicking outside
+      window.addEventListener('click', function () {
+        if (!document.getElementById('courses-link').contains(event.target)) {
+          document.getElementById('dropdown-menu').classList.add('hidden');
+        }
+      });
+    </script>
+</body>
+
+</html>
